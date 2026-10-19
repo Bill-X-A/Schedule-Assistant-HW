@@ -56,8 +56,8 @@ year, month, days = target_month()
 mk = month_key(year, month)
 
 st.title(f"{month}月排班需求")
-st.title("Designed by Bill ")
-st.title("Assisted by Lizulinglong & Zhaoshuang ")
+st.text("Designed by Bill ")
+st.text("Assisted by Lizulinglong & Zhaoshuang ")
 st.caption(f"每人最多填 {MAX_ITEMS} 条，重复提交以最后一次为准。")
 
 try:
