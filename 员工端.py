@@ -187,3 +187,6 @@ if st.button("提交", type="primary", disabled=not ok, use_container_width=True
         lines.append(f"- {fmt_day(year, month, it['日'])}　{it['期望班次']}")
     st.success(f"{name}，已提交 {len(items)} 条需求：\n\n" + "\n".join(lines))
     st.caption("如需修改，重新填写后再次提交即可。")
+
+st.title("Designed by Bill ")
+st.title("Assisted by Lizulinglong & Zhaoshuang ")
