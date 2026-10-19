@@ -19,8 +19,6 @@ SHIFT_OPTIONS = ["休", "早", "中", "晚"]     # 存进飞书时就是这几�
 MAX_ITEMS = 3                                # 每人每月最多 3 条
 WEEKDAY = ["一", "二", "三", "四", "五", "六", "日"]
 
-st.title("Designed by Bill ")
-st.title("Assisted by Lizulinglong & Zhaoshuang ")
 # ================================================================ 管道
 
 st.set_page_config(page_title="排班需求填写", page_icon="📅", layout="centered")
@@ -58,6 +56,8 @@ year, month, days = target_month()
 mk = month_key(year, month)
 
 st.title(f"{month}月排班需求")
+st.title("Designed by Bill ")
+st.title("Assisted by Lizulinglong & Zhaoshuang ")
 st.caption(f"每人最多填 {MAX_ITEMS} 条，重复提交以最后一次为准。")
 
 try:
