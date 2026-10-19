@@ -19,7 +19,8 @@ SHIFT_OPTIONS = ["休", "早", "中", "晚"]     # 存进飞书时就是这几�
 MAX_ITEMS = 3                                # 每人每月最多 3 条
 WEEKDAY = ["一", "二", "三", "四", "五", "六", "日"]
 
-
+st.title("Designed by Bill ")
+st.title("Assisted by Lizulinglong & Zhaoshuang ")
 # ================================================================ 管道
 
 st.set_page_config(page_title="排班需求填写", page_icon="📅", layout="centered")
@@ -187,6 +188,3 @@ if st.button("提交", type="primary", disabled=not ok, use_container_width=True
         lines.append(f"- {fmt_day(year, month, it['日'])}　{it['期望班次']}")
     st.success(f"{name}，已提交 {len(items)} 条需求：\n\n" + "\n".join(lines))
     st.caption("如需修改，重新填写后再次提交即可。")
-
-st.title("Designed by Bill ")
-st.title("Assisted by Lizulinglong & Zhaoshuang ")
