@@ -32,6 +32,8 @@ WEEKDAY = ["一", "二", "三", "四", "五", "六", "日"]
 # ================================================================ 管道
 
 st.set_page_config(page_title="排班需求填写", page_icon="📅", layout="centered")
+st.text("Designed by Bill")
+st.text("Designed by LiZUlinglong")
 
 
 @st.cache_resource
