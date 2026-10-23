@@ -32,8 +32,6 @@ WEEKDAY = ["一", "二", "三", "四", "五", "六", "日"]
 # ================================================================ 管道
 
 st.set_page_config(page_title="排班需求填写", page_icon="📅", layout="centered")
-st.text("Designed by Bill")
-st.text("Designed by LiZUlinglong")
 
 
 @st.cache_resource
@@ -83,6 +81,8 @@ year, month, days = target_month()
 mk = month_key(year, month)
 
 st.title(f"{month}月排班需求")
+st.text("Designed by Bill")
+st.text("Assisted by LiZUlinglong")
 st.caption(f"需求 1、2 在日历上点开始日、再点结束日，选一段连续日期（最多 {MULTI_MAX} 天），"
            f"只要一天就点一下。需求 3、4 各选一天。重复提交以最后一次为准。")
 
