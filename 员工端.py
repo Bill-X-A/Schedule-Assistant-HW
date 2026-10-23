@@ -155,7 +155,7 @@ if all_hands:
     notes.append("全员上班日：" + "、".join(labels) + "，这几天不能申请休息")
 if my_quota is not None:
     notes.append(f"你本月休息 {my_quota} 天")
-notes.append(f"连续休息最多 {MAX_OFF_RUN} 天")
+notes.append(f"连续休息最多 {MAX_OFF_RUN} 次")
 st.warning("；".join(notes) + "。")
 
 first_day = datetime.date(year, month, 1)
@@ -164,7 +164,7 @@ last_day = datetime.date(year, month, days)
 entries = []        # [(需求编号, [日...], 班次 或 None)]
 
 for i in range(MULTI_NEEDS):
-    st.markdown(f"**需求 {i + 1}**（连续日期，最多 {MULTI_MAX} 天）")
+    st.markdown(f"**需求 {i + 1}**（连续日期，最多 {MULTI_MAX} 天，三天需向管理组报备）")
     # value=() 让日历处于"选区间"模式且默认为空。
     # 返回值是元组：没选是 ()，只点了开始日是 (开始,)，选完是 (开始, 结束)
     rng = st.date_input("日期", value=(), min_value=first_day, max_value=last_day,
