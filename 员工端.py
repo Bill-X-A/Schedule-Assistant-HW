@@ -155,13 +155,13 @@ if all_hands:
     notes.append("全员上班日：" + "、".join(labels) + "，这几天不能申请休息")
 if my_quota is not None:
     notes.append(f"你本月休息 {my_quota} 天")
-notes.append(f"连续休息最多 {MAX_OFF_RUN} 天")
+notes.append(f"连续休息最多 {MAX_OFF_RUN} 次")
 st.warning("；".join(notes) + "。")
 
 entries = []        # [(需求编号, [日...], 班次 或 None)]
 
 for i in range(MULTI_NEEDS):
-    st.markdown(f"**需求 {i + 1}**（可多选，最多 {MULTI_MAX} 天）")
+    st.markdown(f"**需求 {i + 1}**（可多选，最多 {MULTI_MAX} 天，3天需向管理组报备）")
     picked = st.multiselect("日期", ALL_DAYS, format_func=fmt_day, max_selections=MULTI_MAX,
                             key=f"days_{i}", placeholder="选择日期",
                             label_visibility="collapsed")
