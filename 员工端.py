@@ -24,7 +24,7 @@ from roster_store import (active_names, get_params, get_requests, month_key,
 SHIFT_OPTIONS = ["休", "早", "中", "晚"]     # 存进飞书时就是这几个字，引擎认得
 MULTI_NEEDS = 2                              # 前几个需求可以多选
 MULTI_MAX = 3                                # 多选需求每个最多几天
-SINGLE_NEEDS = 2                             # 后几个需求只能选一天
+SINGLE_NEEDS = 3                             # 后几个需求只能选一天
 MAX_OFF_RUN = DEFAULT_PARAMS["max_off_run"]  # 单次连休上限，和引擎保持一致
 WEEKDAY = ["一", "二", "三", "四", "五", "六", "日"]
 
