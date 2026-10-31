@@ -95,7 +95,7 @@ class Config:
     max_mid_per_person: int = 4                      # MIDCAP 每人每月中班上限
     max_smart_same_shift: int = 2                    # R6b 智慧办公同日同班次上限
 
-    soft_max_consec: int = 5                         # R15
+    soft_max_consec: int = 4                         # R15
     mid_soft_cap: int = 2                            # MID 每日免罚额度
     mgmt_avoid_weekend_off: bool = False             # R14 按月开关
 
