@@ -230,7 +230,7 @@ DEFAULT_PARAMS = {
     "year": 2026, "month": 10,
     "all_hands_days": [],
     "min_early": 4, "min_late": 4, "max_late_over_early": 2, "weekend_min_on": 12,
-    "max_consec": 7, "soft_max_consec": 5, "max_consec_off_runs": 2,
+    "max_consec": 7, "soft_max_consec": 4, "max_consec_off_runs": 2,
     "balance_tol": 2, "mid_soft_cap": 2, "max_off_run": 2, "max_mid_per_person": 4,
     "max_requested_off_run": 3,
     "max_smart_same_shift": 2,
